@@ -28,7 +28,6 @@ class NewsRepository(val localDataSource: NewsDataSource, val remoteDataSource: 
         request?.connect { it.unsubscribe() }
         request = null
         localDataSource.clearNewsList()
-        remoteDataSource.clearNewsList()
     }
 
     override fun storeNewsList(newses: List<News>) {
