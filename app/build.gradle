@@ -7,7 +7,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "org.loop.mmatech"
+        applicationId "com.github.damianpetla.rxsample"
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
