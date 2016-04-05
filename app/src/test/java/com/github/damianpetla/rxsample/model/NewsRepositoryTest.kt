@@ -72,7 +72,7 @@ class NewsRepositoryTest {
     fun clearNewsList_clear() {
         repo.clearNewsList()
         Mockito.verify(localDataSource).clearNewsList()
-        Mockito.verify(remoteDataSource).clearNewsList()
+        Mockito.verify(remoteDataSource, Mockito.never()).clearNewsList()
     }
 
 }
